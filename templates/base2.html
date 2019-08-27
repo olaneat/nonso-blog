@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>King Nonso Blog </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Personal View Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+  Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <script type="application/x-javascript" src="{% static 'blog/js/base_head.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}"> 
+  <link rel="stylesheet" href="{% static 'blog/css/style.css' %}" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="{% static 'blog/css/fontawesome-all.css' %}"> 
+  <link rel="stylesheet" href="{% static 'blog/css/lightbox.css' %}">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500		i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" 	   rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i	&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+</head>
+
+<body>
+<section class="nav-banner">
+	<div class="nav-banner-layer">
+		<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light py-4">
+	<h1>
+ 	  <a class="navbar-brand" href="{% url 'blog:index' %}">King Nonso Blog</a>
+	</h1>
+	<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" 
+	  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+	  aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav ml-lg-auto text-center">
+	    <li class="nav-item active mr-lg-4">
+		  <a class="nav-link" href="{% url 'blog:index' %}">Home
+			<span class="sr-only">(current)</span>
+		  </a>
+		</li>
+		<li class="nav-item mr-lg-4">
+		  <a class="nav-link scroll" href="{% url 'blog:profile' %}">About</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link scroll" href=" {% url 'blog:event-list' %} ">Calender</a>
+		</li>
+	  </ul>
+	</div>
+
+			
+  </nav>
+</div>
+</div>
+</section>
+
+
+{% block content %}
+
+  </div>
+</section>	
+{% endblock %}
+
+</body>
+</html>

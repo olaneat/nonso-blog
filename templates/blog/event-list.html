@@ -1,0 +1,35 @@
+{% extends "base2.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block content %}
+  <div class="container">
+  	<div class="row">
+  	  <div class="col-md-12">
+  	    {% if events %}
+  		  <ul>
+  		    {% for event in events %}
+  		  	  <li><a href="{{ event.get_absolute_url }}">{{ event.event_title }}</a></li>
+  		  	  <br><hr>
+  		    {% endfor %}
+  		  </ul>
+  	    {% else %}
+  	      <p>No event yet</p>
+  	    {% endif %}
+  	  </div>
+  	</div>
+  	<div class="row">
+  	  <div class="col-md-12">
+  	  	<form method="post" action="">
+  	  	  {% csrf_token %}
+  	  	  {{ event_form | crispy }}
+  	  	  <br><br>
+  	  	  <input type="submit" value="Submit" class="btn btn-success"> 
+
+  	  	</form>
+  	  </div>
+  	</div>
+  </div>
+
+{% endblock %}
