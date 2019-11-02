@@ -5,7 +5,7 @@ beautifulsoup4==4.6.3
 configparser==3.5.0
 cryptography==2.1.4
 dj-database-url==0.5.0
-Django==1.11.16
+Django==1.11.23
 django-bootstrap3==10.0.1
 django-multiselectfield==0.1.8
 django-widget-tweaks==1.4.3
