@@ -3,7 +3,7 @@ astroid==1.6.0
 backports.functools-lru-cache==1.4
 beautifulsoup4==4.6.3
 configparser==3.5.0
-cryptography==2.1.4
+cryptography==3.2
 dj-database-url==0.5.0
 Django==1.11.16
 django-bootstrap3==10.0.1
